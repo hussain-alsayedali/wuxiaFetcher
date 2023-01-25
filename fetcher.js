@@ -18,7 +18,7 @@ async function main(startChapter, endingChapter) {
     mainText = mainText.replace(/Read Latest Chapters at wuxiaworld.eu/g, "");
     console.log(i);
   }
-  let fileName = startChapter + " - " + endingChapter;
+  let fileName = startChapter + " - " + endingChapter + ".txt";
   fs.writeFile(fileName, mainText, function (err) {
     if (err) throw err;
     console.log("File is created successfully.");

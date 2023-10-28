@@ -30,4 +30,10 @@ async function tester(){
     await new Promise(r => setTimeout(r, 500));
     console.log(body)
 }
-tester()
+function  getRandomNum(){
+    let randomNum =  400 + Math.random() * 200
+    console.log(randomNum) 
+}
+for(i = 1 ; i < 40 ; i ++){
+    getRandomNum()
+}
